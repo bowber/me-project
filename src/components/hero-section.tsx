@@ -7,7 +7,7 @@ export const HeroSection = () => {
       <Header />
       <div className="container flex items-center justify-center flex-col text-slate-900">
         <TypeAnimation
-          className='text-6xl font-bold'
+          className='text-6xl font-bold text-center'
           sequence={[
             'I am a software developer',
             1000, // wait 1s before replacing "Mice" with "Hamsters"
