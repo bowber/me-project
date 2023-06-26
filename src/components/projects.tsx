@@ -21,7 +21,7 @@ export const Projects = () => {
       className="w-full h-[100vh] bg-slate-600 flex items-center justify-center sticky top-0 overflow-x-hidden"
     >
       <motion.div
-        className="mt-[-100px] container flex flex-col items-end"
+        className="mt-[-100px] container flex flex-col items-end px-8 box-border"
         style={{ x: transX }}
         ref={ref}
       >

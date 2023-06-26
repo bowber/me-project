@@ -12,14 +12,14 @@ export const About = () => {
     damping: 30,
     restDelta: 0.001
   });
-  const transY = useTransform(springProgress, [0, 1], [-200, 300])
+  const transY = useTransform(springProgress, [0, 1], [-150, 300])
   return (
     <motion.div
       id="about"
       className="w-full h-[100vh] bg-slate-400 flex items-center justify-center sticky top-0 overflow-x-hidden"
     >
       <motion.div
-        className="mt-[-100px] container"
+        className="mt-[-100px] container px-8 box-border"
         style={{ x: transY }}
         ref={ref}
       >

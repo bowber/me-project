@@ -20,7 +20,7 @@ export const HeroSection = () => {
           speed={50}
           repeat={Infinity}
         />
-        <h1 className="h1 text-6xl font-bold mt-4 pb-20">
+        <h1 className="h1 text-6xl font-bold mt-4 pb-20 text-center">
           Who I am?
         </h1>
       </div>
