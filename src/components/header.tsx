@@ -6,9 +6,9 @@ export const Header = () => {
           <div className="ml-4 font-semibold text-lg">Lam Nguyen</div>
         </div>
         <div className="flex items-center">
-          <a href="#" className="font-semibold text-lg mr-8">About</a>
-          <a href="#" className="font-semibold text-lg mr-8">Projects</a>
-          <a href="#" className="font-semibold text-lg mr-8">Contact</a>
+          <a href="/#about" className="font-semibold text-lg mr-8">About</a>
+          <a href="/#projects" className="font-semibold text-lg mr-8">Projects</a>
+          <a href="/#contact" className="font-semibold text-lg mr-8">Contact</a>
         </div>
       </div>
     </div>

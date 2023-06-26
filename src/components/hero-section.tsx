@@ -3,7 +3,7 @@ import { Header } from './header';
 
 export const HeroSection = () => {
   return (
-    <div className="w-full h-screen bg-slate-200 flex flex-col items-center justify-between sticky top-0 snap-start">
+    <div className="w-full h-screen bg-slate-200 flex flex-col items-center justify-between sticky top-0">
       <Header />
       <div className="container flex items-center justify-center flex-col text-slate-900">
         <TypeAnimation
