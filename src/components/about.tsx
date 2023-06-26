@@ -7,12 +7,12 @@ export const About = () => {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const springProgress = useSpring(scrollYProgress, {
+  const transX = useTransform(scrollYProgress, [0.5, 1], [0, 300])
+  const sprintTransX = useSpring(transX, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
-  const transY = useTransform(springProgress, [0, 1], [-150, 300])
   return (
     <motion.div
       id="about"
@@ -20,7 +20,7 @@ export const About = () => {
     >
       <motion.div
         className="mt-[-100px] container px-8 box-border"
-        style={{ x: transY }}
+        style={{ x: sprintTransX }}
         ref={ref}
       >
 

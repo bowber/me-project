@@ -8,13 +8,12 @@ export const Projects = () => {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const springProgress = useSpring(scrollYProgress, {
+  const transX = useTransform(scrollYProgress, [0.5, 1], [0, -300])
+  const sprintTransX = useSpring(transX, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
-  const transX = useTransform(springProgress, [0, 1], [200, -300])
-
   return (
     <motion.div
       id="projects"
@@ -22,7 +21,7 @@ export const Projects = () => {
     >
       <motion.div
         className="mt-[-100px] container flex flex-col items-end px-8 box-border"
-        style={{ x: transX }}
+        style={{ x: sprintTransX }}
         ref={ref}
       >
         <Floating className="text-4xl text-slate-200 font-bold text-right" delay={0}>
